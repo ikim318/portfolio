@@ -1,0 +1,18 @@
+.navbar {
+    background: #fefefe;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-link {
+    font-size: x-large;
+}
