@@ -1,0 +1,57 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d6d6d6;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.home-title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 15rem;
+    font-weight: 900;
+    color: #fefefe;
+    margin: 0;
+    z-index: 1;
+    letter-spacing: -5px;
+}
+
+.home h2 {
+    color: #232323;
+    position: absolute;
+    z-index: 3;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: -20rem;
+}
+
+.profile-container {
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    margin-top: 20rem;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.email {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: medium;
+    color: #232323;
+}

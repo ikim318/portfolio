@@ -1,0 +1,52 @@
+:root {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* Supports light & Dark mode */
+    /* color-scheme: light dark; */
+
+    color: #efeff1;
+    background-color: #232323;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    font-weight: 500;
+    color: #232323;
+    text-decoration: inherit;
+    color: #232323;
+    overflow: hidden;
+    padding: 0.7rem 1rem 0.5rem 1rem;
+    border-bottom: 4px solid #232323;
+    transition:
+        color 0.3s,
+        background-color 0.2s;
+}
+
+a:hover {
+    background-color: #232323;
+    color: #fefefe;
+}
+
+h2 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}

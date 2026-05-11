@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Education from "./pages/Education";
@@ -11,8 +11,8 @@ function App() {
     return (
         <div>
             <NavBar />
+            <Home />
             <div className="main-content">
-                <Home />
                 <AboutMe />
                 <Education />
                 <Career />
