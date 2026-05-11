@@ -1,31 +1,33 @@
 import { AboutMeData } from "../data/AboutMeData";
+import "../css/AboutMe.css";
 
 function AboutMe() {
     return (
-        <div>
-            <h1>About Me</h1>
+        <div className="about-me">
+            <h2>About Me</h2>
 
-            {Object.entries(AboutMeData).map(([title, items]) => (
-                <div key={title}>
-                    <h2>{title}</h2>
+            <div className="about-content-wrapper">
+                {Object.entries(AboutMeData).map(([title, items]) => (
+                    <div key={title} className="about-section">
+                        <h3>{title}</h3>
 
-                    {items.map((item) => (
-                        <div key={item.name}>
-                            <span>{item.name}</span>
+                        {items.map((item) => (
+                            <div key={item.name} className="skill-item">
+                                <span className="skill-name">{item.name}</span>
 
-                            <div>
-                                <div
-                                    style={{
-                                        width: `${item.level}%`,
-                                        height: "10px",
-                                        background: "black",
-                                    }}
-                                />
+                                <div className="progress-bar">
+                                    <div
+                                        className="progress-fill"
+                                        style={{
+                                            width: `${item.level}%`,
+                                        }}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            ))}
+                        ))}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
