@@ -5,9 +5,15 @@ function useScrollToTarget(targetName: string) {
     const targetRef = useRef<HTMLElement>(null);
 
     const scrollToTarget = () => {
-        document.querySelector(`#${targetName}`)?.scrollIntoView({
-            behavior: "smooth",
-        });
+        const element = document.querySelector(`#${targetName}`) as HTMLElement;
+        if (element) {
+            const offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
+
+            window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth",
+            });
+        }
     };
 
     useEffect(() => {

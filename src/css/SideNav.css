@@ -1,0 +1,28 @@
+.side-nav {
+    position: sticky;
+    flex: 0.5;
+    top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: fit-content;
+    height: 100vh;
+    z-index: 10;
+}
+
+.side-nav button {
+    color: #fefefe;
+    opacity: 25%;
+    font-size: 3.75rem;
+    font-weight: 900;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.side-nav button.active {
+    opacity: 100%;
+}
+
+.side-nav button:not(.active):hover {
+    opacity: 50%;
+}

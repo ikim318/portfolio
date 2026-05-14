@@ -1,4 +1,5 @@
 import type { TabsPropsT } from "../components/types";
+import "../css/SideNav.css";
 
 function SideNav({ navTabs }: TabsPropsT) {
     return (
@@ -7,9 +8,7 @@ function SideNav({ navTabs }: TabsPropsT) {
                 <button
                     key={idx}
                     onClick={tab.scrollToTarget}
-                    className={
-                        tab.isTarget ? "text-mainGray" : "text-lightGray hover:text-[#4a4a4a]"
-                    }>
+                    className={tab.isTarget ? "active" : ""}>
                     {tab.targetName}
                 </button>
             ))}

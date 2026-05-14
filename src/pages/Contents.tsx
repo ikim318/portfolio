@@ -3,21 +3,22 @@ import Project from "./content/Project";
 import Career from "./content/Career";
 import Education from "./content/Education";
 import useScrollToTarget from "../components/useScrollToTarget";
+import "../css/Contents.css";
 
 function Contents() {
     const navTabs = [
-        useScrollToTarget("education"),
-        useScrollToTarget("career"),
-        useScrollToTarget("project"),
+        useScrollToTarget("Education"),
+        useScrollToTarget("Career"),
+        useScrollToTarget("Project"),
     ];
 
     return (
-        <section>
+        <section className="container">
             <SideNav navTabs={navTabs} />
-            <section>
-                <Education id="education" navTabs={navTabs} />
-                <Career id="career" navTabs={navTabs} />
-                <Project id="project" navTabs={navTabs} />
+            <section className="right-wrap">
+                <Education id="Education" navTabs={navTabs} />
+                <Career id="Career" navTabs={navTabs} />
+                <Project id="Project" navTabs={navTabs} />
             </section>
         </section>
     );

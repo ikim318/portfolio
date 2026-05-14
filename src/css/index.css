@@ -16,12 +16,8 @@
     box-sizing: border-box;
 }
 
-html,
 body {
     overflow-x: hidden;
-}
-
-body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
@@ -50,4 +46,10 @@ h2 {
     font-size: 3.2em;
     line-height: 1.1;
     font-weight: bold;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }

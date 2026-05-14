@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 2.5rem;
+    width: 100%;
+    position: relative;
+    gap: 3.5rem;
+}
+
+.right-wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    gap: 15rem;
+    padding-bottom: 5rem;
+}
