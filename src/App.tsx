@@ -1,10 +1,8 @@
 import "./css/App.css";
-import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe";
-import Education from "./pages/Education";
-import Career from "./pages/Career";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
+import Home from "./pages/content/Home";
+import AboutMe from "./pages/content/AboutMe";
+import Contents from "./pages/Contents";
+import Contact from "./pages/content/Contact";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -14,9 +12,7 @@ function App() {
             <Home />
             <div className="main-content">
                 <AboutMe />
-                <Education />
-                <Career />
-                <Project />
+                <Contents />
                 <Contact />
             </div>
         </div>
