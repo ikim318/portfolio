@@ -1,8 +1,7 @@
 import type { InfoType } from "../components/types";
 
-export const educations: InfoType[] = [
+export const educationData: InfoType[] = [
     {
-        id: 1,
         date: "2017.02 - 2021.12",
         institution: "Westlake Girls High School",
         role: "@ Student",
@@ -13,7 +12,6 @@ export const educations: InfoType[] = [
         skills: ["Python", "HTML", "CSS", "PhotoShop", "Calculus", "Github"],
     },
     {
-        id: 2,
         date: "2022.02 - 2025.11",
         institution: "University of Auckland",
         role: "@ Bachelor of Engineering Science",

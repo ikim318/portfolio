@@ -1,5 +1,5 @@
-import profileImg from "../assets/icon/profile.png";
-import "../css/Home.css";
+import profileImg from "../../assets/icon/profile.png";
+import "../../css/Home.css";
 
 function Home() {
     return (

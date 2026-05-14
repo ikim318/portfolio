@@ -1,5 +1,5 @@
-import { AboutMeData } from "../data/AboutMeData";
-import "../css/AboutMe.css";
+import { AboutMeData } from "../../data/AboutMeData";
+import "../../css/AboutMe.css";
 
 function AboutMe() {
     return (

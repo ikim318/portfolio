@@ -1,4 +1,4 @@
-import type { ProjectType } from "./types";
+import type { ProjectType } from "../../components/types";
 
 type Props = {
     project: ProjectType;
