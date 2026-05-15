@@ -1,6 +1,6 @@
-import type { InfoType } from "../components/types";
+import type { InfoProps } from "../components/types";
 
-export const careerData: InfoType[] = [
+export const careerData: InfoProps[] = [
     {
         date: "2024.12 - 2025.02",
         institution: "Timegate",
