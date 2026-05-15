@@ -1,0 +1,59 @@
+.paper-background {
+    position: relative;
+    background-image: url("https://img.freepik.com/free-photo/white-paper-texture_1194-2301.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.paper-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(214, 214, 214, 0.7);
+    pointer-events: none;
+}
+
+.outro-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outro-container h1 {
+    font-size: 15rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.outro-nav {
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-link {
+    font-size: x-large;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 3rem;
+    font-size: 1.2rem;
+    color: #9d9d9d;
+}

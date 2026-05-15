@@ -1,8 +1,7 @@
-import "./css/App.css";
 import Home from "./pages/content/Home";
 import AboutMe from "./pages/content/AboutMe";
 import Contents from "./pages/Contents";
-import Contact from "./pages/content/Contact";
+import Outro from "./pages/content/Outro";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
             <Home />
             <AboutMe />
             <Contents />
-            <Contact />
+            <Outro />
         </div>
     );
 }
