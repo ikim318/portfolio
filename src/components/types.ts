@@ -10,13 +10,16 @@ export type SkillData = {
     Tools: SkillItem[];
 };
 
-export type InfoType = {
-    // id: number;
+export type InfoProps = {
     date: string;
     institution: string;
     role: string;
     description: string[];
     skills: string[];
+};
+
+export type InfoPropsT = {
+    info: InfoProps;
 };
 
 export type ProjectProps = {

@@ -1,16 +1,6 @@
-import type { InfoType } from "../components/types";
+import type { InfoProps } from "../components/types";
 
-export const educationData: InfoType[] = [
-    {
-        date: "2017.02 - 2021.12",
-        institution: "Westlake Girls High School",
-        role: "@ Student",
-        description: [
-            "Encellence Endorsement in Level 3: Chenistry, Calculus, Physics",
-            "Merit Endorsement in Level 3: Statistics",
-        ],
-        skills: ["Python", "HTML", "CSS", "PhotoShop", "Calculus", "Github"],
-    },
+export const educationData: InfoProps[] = [
     {
         date: "2022.02 - 2025.11",
         institution: "University of Auckland",
@@ -22,5 +12,15 @@ export const educationData: InfoType[] = [
             "First in Course Award in Object-Oriented Programming",
         ],
         skills: ["Python", "RStudio", "Matlab", "Java", "Excel", "Github"],
+    },
+    {
+        date: "2017.02 - 2021.12",
+        institution: "Westlake Girls High School",
+        role: "@ Student",
+        description: [
+            "Encellence Endorsement in Level 3: Chenistry, Calculus, Physics",
+            "Merit Endorsement in Level 3: Statistics",
+        ],
+        skills: ["Python", "HTML", "CSS", "PhotoShop", "Calculus", "Github"],
     },
 ];

@@ -1,10 +1,10 @@
 .about-me {
     position: relative;
     z-index: 2;
-    /* min-height: 75vh; */
-    height: auto;
+    min-height: 100vh;
+    /* height: auto; */
     flex: 1;
-    padding: 5rem;
+    padding: 2.5rem;
     box-sizing: border-box;
     width: 100%;
     display: flex;

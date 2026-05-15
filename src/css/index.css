@@ -6,7 +6,7 @@
     /* Supports light & Dark mode */
     /* color-scheme: light dark; */
 
-    color: #efeff1;
+    color: #fefefe;
     background-color: #232323;
 }
 
@@ -43,7 +43,7 @@ a:hover {
 }
 
 h2 {
-    font-size: 3.2em;
+    font-size: 3.75em;
     line-height: 1.1;
     font-weight: bold;
 }

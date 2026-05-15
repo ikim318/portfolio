@@ -1,25 +1,25 @@
-// import type { JSX } from "react";
-import type { InfoType } from "../../components/types";
+import type { InfoPropsT } from "../../components/types";
+import "../../css/InfoCard.css";
 
-const InfoCard = ({ date, institution, role, description, skills }: InfoType) => {
+const InfoCard = ({ info }: InfoPropsT) => {
     return (
-        <div className="career-container">
-            <div className="career-card">
-                <div>{date}</div>
-                <div>{institution}</div>
-                <div>{role}</div>
+        <div className="info-container">
+            <div className="info-card">
+                <p className="info-date">{info.date}</p>
+                <h3>{info.institution}</h3>
+                <span className="info-role">{info.role}</span>
 
-                <div>
-                    {description.map((item, idx) => (
-                        <div key={idx}>{item}</div>
+                <ul className="info-description">
+                    {info.description.map((item, idx) => (
+                        <li key={idx}>{item}</li>
                     ))}
-                </div>
+                </ul>
+            </div>
 
-                <div>
-                    {skills.map((skill, idx) => (
-                        <span key={idx}>{skill}</span>
-                    ))}
-                </div>
+            <div className="info-skills">
+                {info.skills.map((skill, idx) => (
+                    <span key={idx}>{skill}</span>
+                ))}
             </div>
         </div>
     );
