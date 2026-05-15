@@ -1,0 +1,96 @@
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+
+    align-items: stretch;
+}
+
+/* ---------------- PROJECT CARD ---------------- */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    height: 100%;
+}
+
+.project-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #373737;
+
+    flex: 1;
+}
+
+.project-title {
+    color: #fefefe;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.project-description {
+    color: #a6a6a6;
+    margin-bottom: 3rem;
+
+    flex: 1;
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.project-skills-items {
+    padding: 0.7rem 1rem;
+    background-color: #232323;
+    border-radius: 1rem;
+}
+
+/* ---------------- PROJECT OVERLAY ---------------- */
+.project-overlay {
+    position: absolute;
+    flex-direction: column;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Github button */
+.project-overlay a {
+    padding: 12px 40px;
+    background: #fefefe1a;
+    border: 2px solid #fefefe;
+    border-radius: 8px;
+    color: #fefefe;
+    font-size: large;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.project-overlay a:hover {
+    background: #fefefe;
+    color: #232323;
+}

@@ -1,6 +1,7 @@
 import { projects } from "../../data/ProjectData";
 import ProjectCard from "../../components/card/ProjectCard";
 import type { TabsPropsT } from "../../components/types";
+import "../../css/Project.css"
 
 
 const Project = ({ id, navTabs }: TabsPropsT) => {

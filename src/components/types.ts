@@ -19,12 +19,16 @@ export type InfoType = {
     skills: string[];
 };
 
-export type ProjectType = {
+export type ProjectProps = {
     image: string;
     name: string;
     description: string;
     skills: string[];
     github: string;
+};
+
+export type ProjectPropsT = {
+    project: ProjectProps;
 };
 
 export type TabsProps = {

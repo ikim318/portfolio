@@ -1,25 +1,26 @@
-import type { ProjectType } from "../../components/types";
+import type { ProjectPropsT } from "../../components/types";
+import "../../css/Project.css";
 
-type Props = {
-    project: ProjectType;
-};
-
-function ProjectCard({ project }: Props) {
+function ProjectCard({ project }: ProjectPropsT) {
     return (
         <div className="project-card">
             <img src={project.image} alt={project.name} />
             <div className="project-info">
-                <div>{project.name}</div>
-                <div>{project.description}</div>
+                <div className="project-title">{project.name}</div>
+                <p className="project-description">{project.description}</p>
+                <div className="project-skills">
+                    {project.skills.map((skill, i) => (
+                        <span key={i} className="project-skills-items">
+                            {skill}
+                        </span>
+                    ))}
+                </div>
             </div>
-            <div className="project-skills">
-                {project.skills.map((skill, i) => (
-                    <span key={i}>{skill}</span>
-                ))}
+            <div className="project-overlay">
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
             </div>
-            <a href={project.github} target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
         </div>
     );
 }
