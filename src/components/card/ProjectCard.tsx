@@ -17,9 +17,22 @@ function ProjectCard({ project }: ProjectPropsT) {
                 </div>
             </div>
             <div className="project-overlay">
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     GitHub
                 </a>
+                {project.url && (
+                    <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Domain
+                    </a>
+                )}
             </div>
         </div>
     );

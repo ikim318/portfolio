@@ -28,6 +28,7 @@ export type ProjectProps = {
     description: string;
     skills: string[];
     github: string;
+    url?: string;
 };
 
 export type ProjectPropsT = {
